@@ -13,21 +13,14 @@ import { ChevronRightIcon } from "@chakra-ui/icons";
 const agency = () => {
   const router = useRouter();
   const info = useSelector((state) => state.gralData);
-  console.log("🚀 ~ file: [name].js ~ line 9 ~ agency ~ info", info);
   const { name } = router.query;
-  console.log("🚀 ~ file: [name].js ~ line 8 ~ agency ~ name", name);
 
   return (
-    <Box
-      bg="#C4C4C4"
-      h='100%'
-    >
+    <Box>
       <Breadcrumb
         spacing="8px"
         fontWeight="700"
-        fontSize="24px"
         p="1.5em"
-        pb='1em'
         separator={<ChevronRightIcon color="gray.500" />}
       >
         <BreadcrumbItem>

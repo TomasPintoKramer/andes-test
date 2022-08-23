@@ -1,11 +1,6 @@
 import { Box, Text } from "@chakra-ui/react";
 
 const ResultBox = ({ result }) => {
-  console.log(
-    "🚀 ~ file: ResultBox.js ~ line 4 ~ ResultBox ~ result",
-    typeof result
-  );
-
   return (
     <Box
       m="2em"
@@ -17,10 +12,10 @@ const ResultBox = ({ result }) => {
       flexDir="column"
       alignItems="center"
     >
-      <Text fonts="Roboto" fontWeight="400" fontSize="37px">
+      <Text fontSize="37px">
         {typeof result === "string" ? "MES" : "EMPRESA"} MAS VENTAS
       </Text>
-      <Text fonts="Roboto" fontWeight="400" fontSize="69px" lineHeight="81px">
+      <Text fontSize="69px" lineHeight="81px">
         {typeof result === "string"
           ? result
           : "$" +

@@ -17,16 +17,11 @@ const Navbar = () => {
       justifyContent="space-between"
     >
       <Link href="https://github.com/TomasPintoKramer">
-          <a>
-        <Text
-        pl='2em'
-        fonts='Roboto'
-        fontWeight="400"
-        fontSize="24px"
-        lineHeight='28px'>
+        <a>
+          <Text pl="2em" lineHeight="28px">
             Tomas Pinto Kramer
-        </Text>
-            </a>
+          </Text>
+        </a>
       </Link>
     </Box>
   );

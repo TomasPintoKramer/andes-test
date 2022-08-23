@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
       <ChakraProvider resetCSS theme={customTheme}>
         <Provider store={store}>
           <Navbar />
-          <Component  {...pageProps} />
+          <Component {...pageProps} />
         </Provider>
       </ChakraProvider>
     </>
